@@ -1,7 +1,7 @@
 # superheroes-code-challenge
 This project is a Flask REST API that manages superheroes, their powers, and the relationships between them. It fulfills all requirements outlined in the Superheroes Code Challenge rubric, including proper model relationships, validations, and RESTful routes.
 
-Tech Stack
+# Tech Stack
 
 Python 3
 
@@ -55,7 +55,7 @@ GET /heroes/<id>
 Returns a single hero with associated powers.
 Returns 404 if hero is not found.
 
-Powers
+#  Powers
 
 GET /powers
 Returns a list of all powers.
