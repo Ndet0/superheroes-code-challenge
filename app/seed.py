@@ -4,7 +4,7 @@ from app.models import Hero, Power, HeroPower
 app = create_app()
 
 with app.app_context():
-    print("🌱 Seeding database...")
+    print(" Seeding database...")
 
     HeroPower.query.delete()
     Hero.query.delete()
@@ -44,4 +44,4 @@ with app.app_context():
     db.session.add_all(hero_powers)
     db.session.commit()
 
-    print("✅ Done seeding!")
+    print(" Done seeding!")

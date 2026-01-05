@@ -2,9 +2,7 @@ from app import db
 from sqlalchemy.orm import validates
 from sqlalchemy_serializer import SerializerMixin
 
-# =========================
-# Hero Model
-# =========================
+
 class Hero(db.Model, SerializerMixin):
     __tablename__ = "heroes"
 
@@ -21,9 +19,6 @@ class Hero(db.Model, SerializerMixin):
     serialize_rules = ("-hero_powers.hero",)
 
 
-# =========================
-# Power Model
-# =========================
 class Power(db.Model, SerializerMixin):
     __tablename__ = "powers"
 
@@ -48,9 +43,7 @@ class Power(db.Model, SerializerMixin):
         return description
 
 
-# =========================
-# HeroPower Model
-# =========================
+
 class HeroPower(db.Model, SerializerMixin):
     __tablename__ = "hero_powers"
 
